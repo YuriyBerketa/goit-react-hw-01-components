@@ -1,16 +1,15 @@
-export const App = () => {
+// const { Card } = require("./UserCard");
+// import user from "../data/user.json";
+import  {UserProfile}  from "./UserCard";
+
+
+
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+<UserProfile />
     </div>
-  );
-};
+  )
+}
+
+export default App;
