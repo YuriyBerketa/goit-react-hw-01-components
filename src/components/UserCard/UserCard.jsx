@@ -1,7 +1,7 @@
 // import  user  from './data/user.json';
 import data from "./user.json";
 
-export const UserProfile = () => {
+export const UserProfile = ({avatar}) => {
     return (
         <div class="profile">
   <div class="description">
@@ -11,22 +11,22 @@ export const UserProfile = () => {
       class="avatar"
     />
     <p class="name">{data.username}</p>
-                <p class="tag">{ data.tag }</p>
+    <p class="tag">@{ data.tag }</p>
     <p class="location">{data.location}</p>
   </div>
 
   <ul class={data.stats}>
     <li>
-      <span class="label">{data.stats.followers}</span>
-      <span class="quantity">1000</span>
+      <span class="label">Followers </span>
+      <span class="quantity">{data.stats.followers}</span>
     </li>
     <li>
-      <span class="label">{data.stats.views}</span>
-      <span class="quantity">2000</span>
+      <span class="label">Views </span>
+      <span class="quantity">{data.stats.views}</span>
     </li>
     <li>
-      <span class="label">{data.stats.likes}</span>
-      <span class="quantity">3000</span>
+      <span class="label">Likes </span>
+      <span class="quantity">{data.stats.likes}</span>
     </li>
   </ul>
 </div>

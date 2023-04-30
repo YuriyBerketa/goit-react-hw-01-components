@@ -1,5 +1,5 @@
 // const { Card } = require("./UserCard");
-// import user from "../data/user.json";
+// import user from "./user.json";
 import  {UserProfile}  from "./UserCard";
 
 
