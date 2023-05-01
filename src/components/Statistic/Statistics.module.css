@@ -1,0 +1,37 @@
+.statistics{
+    padding: 10px;
+        margin: 30px auto;
+        width: 500px;
+        text-align: center;
+        border: 1px solid #9E9E9E;
+        border-radius: 8px;
+}
+.title{
+    font-weight: 700;
+    font-size: 32px;
+line-height: 1.2;
+}
+.statList{
+list-style: none;
+width: 100%;
+padding: 0;
+display: flex;
+
+}
+.statList li{
+width: calc(100% / 4);
+    height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+.item{
+    display: block;
+}
+.percentage{
+    font-weight: 700;
+    line-height: 2.2;
+}
