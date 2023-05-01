@@ -1,6 +1,8 @@
 import user from "../data/user.json";
 import  {UserProfile}  from "./UserCard";
-
+import { Statistic } from "./Statistic";
+import { StatisticElements } from "./Statistic/StatisticElements";
+import data from "../data/data.json";
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
         location={user.location}
         stats={user.stats}
       />
+      <Statistic text="Upload stats" stats={data} />
+
     </div>
   )
 }
