@@ -1,0 +1,46 @@
+.profile{
+    padding: 10px;
+    margin: 30px;
+    width: 500px;
+    text-align: center;
+border: 1px solid #9E9E9E;
+border-radius: 8px;
+}
+.avatar{
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.name{
+    margin: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+}
+.tag,
+.location{
+    margin: 6px;
+    color: #5E5E64;
+}
+.stats{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 15px;
+    background-color: #9E9E9E;
+    border-radius: 10px;
+}
+.stats li{
+    width: calc(100% / 3);
+}
+.label{
+    color: #484E46;
+
+    font-weight: 600;
+    margin-bottom: 30px; 
+}
+.quantity{
+    display: block;
+    font-weight: 700;
+}
