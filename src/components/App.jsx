@@ -1,7 +1,7 @@
 import user from "../data/user.json";
 import  {UserProfile}  from "./UserCard";
 import { Statistic } from "./Statistic";
-import { StatisticElements } from "./Statistic/StatisticElements";
+// import { StatisticElements } from "./Statistic/StatisticElements";
 import data from "../data/data.json";
 import friends from "../data/friends";
 import { FriendList } from "./FriendList";
