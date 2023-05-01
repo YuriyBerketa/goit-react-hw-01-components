@@ -1,5 +1,4 @@
-// const { Card } = require("./UserCard");
-// import user from "./user.json";
+import user from "../data/user.json";
 import  {UserProfile}  from "./UserCard";
 
 
@@ -7,7 +6,13 @@ import  {UserProfile}  from "./UserCard";
 function App() {
   return (
     <div>
-<UserProfile />
+      <UserProfile
+        avatar={user.avatar}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        stats={user.stats}
+      />
     </div>
   )
 }

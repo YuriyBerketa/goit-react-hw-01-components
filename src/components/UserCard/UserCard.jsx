@@ -1,34 +1,43 @@
 // import  user  from './data/user.json';
-import data from "./user.json";
+// import data from "./user.json";
+import PropTypes from "prop-types";
 
-export const UserProfile = ({avatar}) => {
+export const UserProfile = ({avatar, username, tag, location, stats}) => {
     return (
         <div class="profile">
   <div class="description">
     <img
-      src={data.avatar}
+      src={avatar}
       alt="User avatar"
       class="avatar"
     />
-    <p class="name">{data.username}</p>
-    <p class="tag">@{ data.tag }</p>
-    <p class="location">{data.location}</p>
+    <p class="name">{username}</p>
+    <p class="tag">@{ tag }</p>
+    <p class="location">{location}</p>
   </div>
 
-  <ul class={data.stats}>
+  <ul class={stats}>
     <li>
       <span class="label">Followers </span>
-      <span class="quantity">{data.stats.followers}</span>
+      <span class="quantity">{stats.followers}</span>
     </li>
     <li>
       <span class="label">Views </span>
-      <span class="quantity">{data.stats.views}</span>
+      <span class="quantity">{stats.views}</span>
     </li>
     <li>
       <span class="label">Likes </span>
-      <span class="quantity">{data.stats.likes}</span>
+      <span class="quantity">{stats.likes}</span>
     </li>
   </ul>
 </div>
     )
+}
+
+UserProfile.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+ stats: PropTypes.objectOf(PropTypes.number),
 }
